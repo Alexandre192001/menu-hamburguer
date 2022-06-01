@@ -11,7 +11,7 @@
 
 <hr>
 <h2>⚜️Descriçao⚜️</h2>
-<p>Menu Hamburguer desenvolvido pelo bootcamp TQI Full Stack da plataforma DIO, aprendi algumas técnicas que não sabia sobre transições no CSS3</p>
+<p>Menu Hamburguer desenvolvido pelo bootcamp TQI Full Stack da plataforma DIO, aprendi algumas técnicas que não sabia sobre transições no CSS3.</p>
 <hr>
 
 
