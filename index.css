@@ -1,15 +1,19 @@
+/* Zerando valores padrões */
 *{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
+/* Estilizando fundo da page */
 body{
   background-image:linear-gradient(125deg, rgba(68, 68, 132, 0.667),rgba(40, 19, 60, 0.963),
   rgba(112, 80, 48, 0.667),rgb(36, 40, 47));
   animation: fundo-animation 8s infinite ease-in-out ;
   background-size: 400% 400%;
 }
+
+/* Animação no fundo da page */
 @keyframes fundo-animation {
   0%{
     background-position: 0% 70%;
@@ -21,6 +25,7 @@ body{
     background-position: 100% 0%;
   }
 }
+/* Container main */
 .container-wrapper{
   position: relative;
   width: 100%;
@@ -30,6 +35,8 @@ body{
   align-items:center;
   justify-content: center;
 }
+
+/* Container com as linhas do menu */
 .container-element{
   position: absolute;
   top: 1rem;
@@ -37,6 +44,7 @@ body{
   cursor: pointer;
   z-index: 1;
 }
+/* Linhas do hamburguer */
 .container-element > .lines{
   width: 5rem;
   height: .5rem;
@@ -44,7 +52,7 @@ body{
   margin: .4rem;
   transition: all .2s ease-in-out;
 }
-
+/* Container que abre após click no hamburguer */
 .container-buttons{
   visibility: hidden;
   position: absolute;
@@ -58,6 +66,7 @@ body{
   transition: all .7s ease;
 }
 
+/* Colocando animação no menu */
 #line-wrapper:checked ~ .container-buttons{
   visibility: visible;
   width: 800px;
@@ -65,15 +74,7 @@ body{
   border-bottom-left-radius: 1rem;
 }
 
-#line-wrapper:checked ~ .container-buttons >h1{
-  visibility: visible;
-}
-
-
-.container-buttons h1{
-  visibility: hidden;
-}
-
+/* Estilizando linhas do menu e adicionando evento de check*/
 #line-wrapper{
   visibility: hidden;
 }
